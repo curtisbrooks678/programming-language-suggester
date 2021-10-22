@@ -1,19 +1,18 @@
-# _{Application Name}_
+# Programming Language Suggester
 
-#### By _**{List of contributors}**_
+#### By Curtis Brooks
 
-#### _{Brief description of application}_
+#### This application launches a quiz to determine what programming language a user should study, either Ruby, C#, or Javascript.
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* HTML
+* CSS
+* Javascript
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+This application is a quiz with five survey questions and gives a response after submitting the quiz about which programming language a user would be best suited to learn. Please note: These questions are silly and the response is not intended to be actual advice on which programming language to learn.
 
 ## Setup/Installation Requirements
 
@@ -27,12 +26,9 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+No known bugs.
 
 ## License
-(MIT){https://en.wikipedia.org/wiki/MIT_License}
+[MIT](https://en.wikipedia.org/wiki/MIT_License)
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
-
-Copyright (c) _date_ _author name(s)_
+Copyright (c) 10/22/2021 Curtis Brooks
