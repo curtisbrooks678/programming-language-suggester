@@ -44,16 +44,6 @@ $(document).ready(function() {
       alert("Error: Please select an option for the third question.");
     }
 
-    if (ans3 === "classical") {
-      ruby += 1;
-    } else if (ans3 === "rock") {
-      csharp += 1;
-    } else if (ans3 === "bossa-nova") {
-      javascript += 1;
-    } else {
-      alert("Error: Please select an option for the third question.");
-    }
-
     if (ans4 === "ice-cream") {
       ruby += 1;
     } else if (ans4 === "cake") {
@@ -74,11 +64,22 @@ $(document).ready(function() {
       alert("Error: Please select an option for the fifth question.");
     }
 
-
-
+    if (ruby > csharp && ruby > javascript) {
+      result = "Ruby";
+    } else if (csharp > ruby && csharp > javascript) {
+      result = "C#";
+    } else if (javascript > ruby && javascript > csharp) {
+      result = "Javascript";
+    } else if (ruby === csharp && ruby > javascript && csharp > javascript) {
+      result = "Ruby and C#";
+    } else if (csharp === javascript && csharp > ruby && javascript > ruby) {
+      result = "C# and Javascript";
+    } else if (javascript === ruby && javascript > csharp && ruby > csharp) {
+      result = "Javascript and Ruby";
+    } else {
+      alert("User Error");
+    }
     
-
-
     $("#output").text(result);
   });
 });
@@ -90,3 +91,7 @@ $(document).ready(function() {
 // if (javascript === ruby && javascript === csharp) {
 //   alert("Three way tie");
 // }
+
+    // if (ruby > csharp && ruby > javascript) {
+    //   result = "Ruby";
+    // }
