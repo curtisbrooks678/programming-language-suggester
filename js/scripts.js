@@ -1,48 +1,30 @@
 
-   
-function add(number1, number2) {
-  return number1 + number2;
-}
-
-function subtract(number1, number2) {
-  return number1 - number2;
-}
-
-function multiply(number1, number2) {
-  return number1 * number2;
-}
-
-function divide(number1, number2) {
-  return number1 / number2;
-}
 
 $(document).ready(function() {
-  $("form#add").submit(function(event) {
+  $("#quiz").submit(function(event) {
     event.preventDefault();
-    const number1 = parseInt($("#add1").val());
-    const number2 = parseInt($("#add2").val());
-    const result = add(number1, number2);
-    $("#output").text(result);
-  });
-  $("form#subtract").submit(function(event) {
-    event.preventDefault();
-    const number1 = parseInt($("#subtract1").val());
-    const number2 = parseInt($("#subtract2").val());
-    const result = subtract(number1, number2);
-    $("#output").text(result);
-  });
-  $("form#mult").submit(function(event) {
-    event.preventDefault();
-    const number1 = parseInt($("#mult1").val());
-    const number2 = parseInt($("#mult2").val());
-    const result = multiply(number1, number2);
-    $("#output").text(result);
-  });
-  $("form#div").submit(function(event) {
-    event.preventDefault();
-    const number1 = parseInt($("#div1").val());
-    const number2 = parseInt($("#div2").val());
-    const result = divide(number1, number2);
+
+    const ans1 = $("input:radio[name=color]:checked").val();
+    const ans2 = $("input:radio[name=weather]:checked").val();
+    const ans3 = $("input:radio[name=music]:checked").val();
+    const ans4 = $("input:radio[name=dessert]:checked").val();
+    const ans5 = $("input:radio[name=vegetable]:checked").val();
+
+
+    let ruby;
+    let csharp;
+    let javascript;
+
+
+
     $("#output").text(result);
   });
 });
+
+
+// if (javascript === ruby && javascript > csharp && ruby > csharp) {
+//   alert("Javascript and Ruby");
+// }
+// if (javascript === ruby && javascript === csharp) {
+//   alert("Three way tie");
+// }
