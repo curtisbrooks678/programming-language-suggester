@@ -1,5 +1,8 @@
 #output {
   display: none;
+  float: right;
+  text-align: center;
+  background-color: chartreuse;
 }
 
 .jumbotron {
@@ -13,8 +16,3 @@
   box-sizing: border-box;
   padding: 10px;
 }
-
-#output {
-  float: right;
-}
-
