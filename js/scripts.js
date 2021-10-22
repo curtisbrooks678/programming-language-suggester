@@ -71,11 +71,11 @@ $(document).ready(function() {
     } else if (javascript > ruby && javascript > csharp) {
       result = "Javascript";
     } else if (ruby === csharp && ruby > javascript && csharp > javascript) {
-      result = "Ruby and C#";
+      result = "Ruby or C#: Take your pick!";
     } else if (csharp === javascript && csharp > ruby && javascript > ruby) {
-      result = "C# and Javascript";
+      result = "C# or Javascript: Take your pick!";
     } else if (javascript === ruby && javascript > csharp && ruby > csharp) {
-      result = "Javascript and Ruby";
+      result = "Javascript or Ruby: Take your pick!";
     } else {
       alert("User Error");
     }
