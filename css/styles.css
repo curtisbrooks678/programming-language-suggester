@@ -2,10 +2,19 @@
   display: none;
 }
 
+.jumbotron {
+  background-color: lightcyan;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
 .container {
   background-color: aqua;
+  box-sizing: border-box;
+  padding: 10px;
 }
 
 #output {
   float: right;
 }
+
