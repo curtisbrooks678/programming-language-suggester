@@ -80,7 +80,8 @@ $(document).ready(function() {
       alert("User Error");
     }
     
-    $("#output").text(result);
+    $("#result-here").text(result);
+    $("#output").show();
   });
 });
 
