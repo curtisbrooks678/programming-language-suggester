@@ -84,15 +84,3 @@ $(document).ready(function() {
     $("#output").show();
   });
 });
-
-
-// if (javascript === ruby && javascript > csharp && ruby > csharp) {
-//   alert("Javascript and Ruby");
-// }
-// if (javascript === ruby && javascript === csharp) {
-//   alert("Three way tie");
-// }
-
-    // if (ruby > csharp && ruby > javascript) {
-    //   result = "Ruby";
-    // }
